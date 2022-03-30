@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "348561767454",
+    "project_id": "media-discussion-app",
+    "storage_bucket": "media-discussion-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348561767454:android:c3fdbe208efb2e6332020f",
+        "android_client_info": {
+          "package_name": "com.example.mediadiscussionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348561767454-ipv1t3aummbh4b8adtguiob41a0s49b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_I7xIoUu7ixWcOX6nzL5M_QheSJGC1gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348561767454-ipv1t3aummbh4b8adtguiob41a0s49b4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

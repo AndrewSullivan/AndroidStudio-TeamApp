@@ -1,3 +1,3 @@
-Description of how to bukld and run the App
+Description of how to buld and run the App
 
 Made in Android Studio
