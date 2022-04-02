@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/domin/OneDrive/Documents/University/CI6330-2021-22-TeamApp-19-Android-Studio-App/app/src/main/res/layout/activity_main.xml" value="0.4904891304347826" />
+        <entry key="..\:/Users/domin/OneDrive/Documents/University/CI6330-2021-22-TeamApp-19-Android-Studio-App/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/domin/OneDrive/Documents/University/CI6330-2021-22-TeamApp-19-Android-Studio-App/app/src/main/res/layout/activity_post.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/domin/OneDrive/Documents/University/CI6330-2021-22-TeamApp-19-Android-Studio-App/app/src/main/res/layout/posts_list.xml" value="0.14244604316546763" />
+        <entry key="..\:/Users/domin/OneDrive/Documents/University/CI6330-2021-22-TeamApp-19-Android-Studio-App/app/src/main/res/menu/popup_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

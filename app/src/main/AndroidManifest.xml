@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediaDiscussionApp">
         <activity
+            android:name=".PostActivity"
+            android:theme="@style/Theme.MediaDiscussionApp.NoActionBar"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
