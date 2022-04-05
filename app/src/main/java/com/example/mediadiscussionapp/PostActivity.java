@@ -40,6 +40,7 @@ public class PostActivity extends AppCompatActivity {
             ET_tag.setText(posts.getTag());
             ET_title.setText(posts.getTitle());
             ET_pc.setText(posts.getP_content());
+
             isOldPost = true;
         }catch (Exception e) {
             e.printStackTrace();

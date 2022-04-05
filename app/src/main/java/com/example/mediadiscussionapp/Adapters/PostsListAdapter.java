@@ -4,6 +4,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,11 +36,11 @@ public class PostsListAdapter extends RecyclerView.Adapter<PostsViewHolder>{
     @Override
     public PostsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new PostsViewHolder(LayoutInflater.from(context).inflate(R.layout.posts_list, parent, false));
-
     }
 
     @Override
     public void onBindViewHolder(@NonNull PostsViewHolder holder, int position) {
+
         holder.tv_uname.setText(list.get(position).getUser());
         holder.tv_uname.setSelected(true);
 
@@ -83,7 +86,7 @@ public class PostsListAdapter extends RecyclerView.Adapter<PostsViewHolder>{
 class PostsViewHolder extends RecyclerView.ViewHolder {
 
     CardView posts_container;
-    TextView tv_uname, tv_tag, tv_title, tv_pc, tv_date;
+    TextView tv_uname, tv_tag, tv_title, tv_pc, tv_date, tv_comments;
 
     public PostsViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -93,5 +96,6 @@ class PostsViewHolder extends RecyclerView.ViewHolder {
         tv_title = itemView.findViewById(R.id.tv_title);
         tv_pc = itemView.findViewById(R.id.tv_pc);
         tv_date = itemView.findViewById(R.id.tv_date);
+        tv_comments = itemView.findViewById(R.id.tv_comments);
     }
 }

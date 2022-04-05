@@ -10,10 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.mediadiscussionapp.Adapters.PostsListAdapter;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     FloatingActionButton fab_add;
     SearchView SV_home;
     Posts selectedPost;
+    Button btn_game_news;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +49,17 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         SV_home = findViewById(R.id.SV_home);
         database = RoomDB.getInstance(this);
         posts = database.postDAO().getAll();
-
+        btn_game_news = findViewById(R.id.btn_game_news);
 
         updateRecycler(posts);
+
+        btn_game_news.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GameNewsActivity.class);
+                startActivityForResult(intent, 101);
+            }
+        });
 
         fab_add.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mediadiscussionapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediaDiscussionApp">
         <activity
-            android:name=".PostActivity"
-            android:theme="@style/Theme.MediaDiscussionApp.NoActionBar"
+            android:name=".GameNewsActivity"
             android:exported="false" />
+        <activity
+            android:name=".PostActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaDiscussionApp.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
