@@ -16,6 +16,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mediadiscussionapp.Adapters.PostsListAdapter;
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         database = RoomDB.getInstance(this);
         posts = database.postDAO().getAll();
         btn_game_news = findViewById(R.id.btn_game_news);
+
 
         updateRecycler(posts);
 

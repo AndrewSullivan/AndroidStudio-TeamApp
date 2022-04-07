@@ -82,13 +82,13 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/tv_comments"
+            android:id="@+id/TV_comment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Comments" />
+            android:text="Comment" />
 
         <EditText
-            android:id="@+id/et_enter_comment"
+            android:id="@+id/ET_entered_comment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

@@ -24,6 +24,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/white"
+        android:visibility="visible"
         app:iconifiedByDefault="false"
         app:queryHint="Search/Filter" />
 
@@ -31,7 +32,7 @@
         android:id="@+id/recycler_home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/SV_home"
+        android:layout_below="@id/SV_home"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"

@@ -86,7 +86,9 @@ public class PostsListAdapter extends RecyclerView.Adapter<PostsViewHolder>{
 class PostsViewHolder extends RecyclerView.ViewHolder {
 
     CardView posts_container;
-    TextView tv_uname, tv_tag, tv_title, tv_pc, tv_date, tv_comments;
+    TextView tv_uname, tv_tag, tv_title, tv_pc, tv_date, TV_comment;;
+    EditText ET_entered_comment;
+    Button btn_submit_comment;
 
     public PostsViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -96,6 +98,16 @@ class PostsViewHolder extends RecyclerView.ViewHolder {
         tv_title = itemView.findViewById(R.id.tv_title);
         tv_pc = itemView.findViewById(R.id.tv_pc);
         tv_date = itemView.findViewById(R.id.tv_date);
-        tv_comments = itemView.findViewById(R.id.tv_comments);
+        btn_submit_comment = itemView.findViewById(R.id.btn_submit_comment);
+        TV_comment = itemView.findViewById(R.id.TV_comment);
+        ET_entered_comment = itemView.findViewById(R.id.ET_entered_comment);
+
+        btn_submit_comment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TV_comment.setText(ET_entered_comment.getText().toString());
+                ET_entered_comment.setText("");
+            }
+        });
     }
 }
